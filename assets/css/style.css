@@ -1,0 +1,121 @@
+/*   Body/Default Attributes   */
+body {
+    padding-top: 54px;
+    font-family: 'Alegreya SC', serif;
+    background-image: url(../images/background.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*   Element Attributes   */
+p {
+    margin-top: 1rem;
+}
+
+button {
+    font-family: 'MedievalSharp', cursive;
+}
+
+input[type=radio] {
+    margin-right: 10px;
+}
+
+
+/*   Class Attributes   */
+.start,
+.questions,
+.results,
+.explanation {
+    margin: 0 auto;
+    padding: 25px;
+    min-width: 400px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.explanation {
+    text-align: left;
+}
+
+.timer {
+    position: fixed;
+    z-index: 100;
+    top: 35px;
+    right: 35px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background: rgb(221, 68, 57);
+    font-family: 'IM Fell English', serif; 
+    color: #FFF;
+    font-size: 60px;
+    text-align: center;
+}
+
+.questions {
+    text-align: left;
+}
+
+span.correct-answer {
+    color: rgb(63, 107, 230);
+}
+
+p.question {
+    font-size: 18px;
+}
+
+/*   ID Attributes   */
+#sigil {
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    height: 200px;
+}
+
+#logo {
+    display: block;
+    width: 400px;
+}
+
+#submit {
+    margin-top: 15px;
+}
+
+/*   Media Queries   */
+@media (max-width: 768px) {
+    .timer {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        background: rgb(221, 68, 57);
+        font-family: 'IM Fell English', serif; 
+        color: #FFF;
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .timer {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background: rgb(221, 68, 57);
+        font-family: 'IM Fell English', serif; 
+        color: #FFF;
+        font-size: 20px;
+        text-align: center;
+    }
+}

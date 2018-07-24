@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Game of Thrones Trivia Quest">
+    <meta name="author" content="Rick Knowlton">
+
+    <title>Game of Thrones Trivia Quest</title>
+
+    <!--== Favicon ==-->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+    <!--== CSS Files ==-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+SC|IM+Fell+English|MedievalSharp">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <img id="sigil" src="assets/images/sigil.png" />
+        </div>
+        <!--== Timer ==-->
+        <div class="timer pulse animated">
+            <p>
+                <span id="time">60</span>
+            </p>
+        </div>
+
+        <!--== Welcome Content ==-->
+        <div class="row">
+            <div class="start">
+                <img id="logo" src="assets/images/logo.png" />
+                <button class="btn btn-lg btn-outline-dark mt-2" id="start">Start</button>
+            </div>
+
+            <!--== Trivia Content ==-->
+            <div class="questions">
+            </div>
+
+            <!--== Results/Explanation Page ==-->
+            <div class="results">
+                <h1>Results</h1>
+                <p>Right:
+                    <span id="right"></span>
+                </p>
+                <p>Wrong:
+                    <span id="wrong"></span>
+                </p>
+                <p>No Answer:
+                    <span id="none"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="explanation my-3">
+                <h1 class="text-center">Correct Answers</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--== Javascript/jQuery Files ==-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
